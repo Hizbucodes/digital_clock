@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family:digital-7;
+    src: url('/Part1/digital-7/digital-7.ttf');
+  }
+
+  :root{
+    --light-color:rgb(229, 255, 0);
+  }
+                
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 20px;
+}
+
+.wrapper{
+   width: 600px;
+   height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-weight: bold;
+   font-size: 2.5rem;
+   border: 50px solid red;
+   border-radius: 10px;
+   font-size:80px;
+   font-family:digital-7;
+   color:white;
+   text-shadow: 0 0 20px var(--light-color);
+
+   
+}
+
+h2{
+    font-weight: 500;
+    font-size: 60px;
+    font-family: sans-serif;
+   
+}
+
+@media (max-width:600px)
+{
+    .wrapper{
+        width: 550px;
+    }
+}
+
+@media (max-width:500px)
+{
+    .wrapper{
+        width: 450px;
+    }
+
+
+    .clock{
+        font-size: 4rem;
+    }
+}
